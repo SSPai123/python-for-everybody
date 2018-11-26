@@ -10,7 +10,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-#Enter the location of the XML file
+#Enter the location of the XML file. For Example: http://py4e-data.dr-chuck.net/comments_127581.xml
 url = input('Enter - ')
 data = urlopen(url, context=ctx).read()
 
